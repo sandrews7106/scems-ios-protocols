@@ -1,0 +1,26 @@
+workflows:
+  ios-build:
+    name: SCEMS iOS Build
+    environment:
+      vars:
+        APP_NAME: "SCEMS Protocols"
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: "com.scems.protocols"
+        app_store_connect_apple_id: your_apple_id_email_here
+    scripts:
+      - name: Install Node.js dependencies
+        script: |
+          npm install
+      - name: Add iOS platform
+        script: |
+          npx cap add ios
+      - name: Sync Capacitor
+        script: |
+          npx cap sync ios
+      - name: Build iOS app
+        script: |
+          cd ios
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Release CODE_SIGN_IDENTITY="Apple Distribution" | xcpretty
+    artifacts:
+      - ios/build/Build/Products/Release-iphoneos/*.ipa

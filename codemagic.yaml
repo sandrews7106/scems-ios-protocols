@@ -7,7 +7,7 @@ workflows:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: "com.scems.protocols"
-        app_store_connect_apple_id: your_apple_id_email_here
+        app_store_connect_apple_id: sethall4jesus@hotmail.com
     scripts:
       - name: Install Node.js dependencies
         script: |

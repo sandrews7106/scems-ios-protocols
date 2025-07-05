@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>810 – Glasgow Coma Scale</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+    .content {
+      padding: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+    }
+  
+@media (max-width: 600px) {
+  table {
+    min-width: unset;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .drug-table th,
+  .drug-table td,
+  th, td {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+}
+</style>
+</head>
+<body>
+<header class="app-header">
+<button aria-label="Open menu" onclick="openNav()">☰</button>
+<h1>SULLIVAN COUNTY EMS PROTOCOLS</h1>
+<span></span>
+</header>
+<div class="logo-bar">
+<img alt="Sullivan County EMS Logo" src="images/scems-logo.png"/>
+</div>
+<main class="container">
+<h1>810 – GLASGOW COMA SCALE</h1>
+<div class="content">
+<div class="scroll-wrapper"><table>
+<thead><tr><th colspan="2">Eye Opening</th></tr></thead>
+<tbody>
+<tr><td>Spontaneous</td><td>4</td></tr>
+<tr><td>To voice</td><td>3</td></tr>
+<tr><td>To pain</td><td>2</td></tr>
+<tr><td>None</td><td>1</td></tr>
+</tbody>
+</table></div>
+<div class="scroll-wrapper"><table>
+<thead><tr><th colspan="2">Verbal Response</th></tr></thead>
+<tbody>
+<tr><td>Oriented</td><td>5</td></tr>
+<tr><td>Confused</td><td>4</td></tr>
+<tr><td>Inappropriate words</td><td>3</td></tr>
+<tr><td>Incomprehensible sounds</td><td>2</td></tr>
+<tr><td>None</td><td>1</td></tr>
+</tbody>
+</table></div>
+<div class="scroll-wrapper"><table>
+<thead><tr><th colspan="2">Motor Response</th></tr></thead>
+<tbody>
+<tr><td>Obeys commands</td><td>6</td></tr>
+<tr><td>Localizes pain</td><td>5</td></tr>
+<tr><td>Withdraws (pain)</td><td>4</td></tr>
+<tr><td>Flexion</td><td>3</td></tr>
+<tr><td>Extension</td><td>2</td></tr>
+<tr><td>None</td><td>1</td></tr>
+</tbody>
+</table></div>
+</div>
+</main>
+<nav class="side-menu hidden" id="sideMenu"></nav>
+<script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "scems-ios-wrapper",
+  "version": "1.0.0",
+  "description": "SCEMS Protocols iOS Capacitor Wrapper",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx cap serve"
+  },
+  "dependencies": {
+    "@capacitor/core": "5.0.6"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "5.0.6"
+  }
+}

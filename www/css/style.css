@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Buttons */
+.protocol-button {
+  display: block;
+  background: #ff6600;
+  color: white;
+  padding: 1em;
+  margin-bottom: 0.75em;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Base Layout */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-transform: none;
+  padding: 1em;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.protocol-title {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Header */
+.app-header {
+  background-color: #0056a3;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  font-size: 0.85rem;
+  text-align: center;
+  flex: 1;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+
+.app-header button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Sidebar Navigation */
+.side-menu {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 220px;
+  background: #ffffff;
+  border-right: 1px solid #ccc;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 1em;
+  z-index: 1000;
+}
+
+.side-menu a {
+  display: block;
+  margin-bottom: 1em;
+  color: #0056a3;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* ✅ Always keep this OUTSIDE any media queries */
+.hidden {
+  display: none;
+}
+
+/* Logo */
+.logo-bar {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo-bar img {
+  height: 80px;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+/* Category List */
+.category-list {
+  padding: 1em;
+}
+
+.category-list a {
+  display: block;
+  background: #ff6600;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0.75em;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Drug Table */
+.drug-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+}
+
+.drug-table th,
+.drug-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.drug-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  .app-header {
+    background-color: #1e1e1e;
+  }
+
+  .side-menu {
+    background: #2c2c2c;
+  }
+
+  .side-menu a {
+    color: #80bfff;
+  }
+
+  .category-list a,
+  .search-result-link {
+    background: #bb4b00;
+    color: #e0e0e0;
+  }
+
+  .drug-table th {
+    background-color: #333;
+  }
+
+  .drug-table td {
+    background-color: #1e1e1e;
+  }
+}
+.scroll-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+}
+table {
+  min-width: 600px; /* enables scroll on smaller screens */
+}
+@media (max-width: 600px) {
+  table {
+    min-width: unset;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .drug-table th,
+  .drug-table td {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+}

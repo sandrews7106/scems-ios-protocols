@@ -1,0 +1,4 @@
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/my_ems_blue" />
+    <foreground android:drawable="@drawable/scems_patch_logo" />
+</adaptive-icon>

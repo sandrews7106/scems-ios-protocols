@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>815 – PEDIATRIC TRAUMA SCORE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .role-banner {
+      background-color: #5e0033;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 1.5em;
+    }
+    .role-banner span {
+      margin: 0 20px;
+      opacity: 0.3;
+    }
+    .content {
+      padding: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+    .footer {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <button aria-label="Open menu" onclick="openNav()">☰</button>
+    <h1>SULLIVAN COUNTY EMS PROTOCOLS</h1>
+    <span></span>
+  </header>
+
+  <div class="logo-bar">
+    <img src="images/scems-logo.png" alt="Sullivan County EMS Logo" />
+  </div>
+
+  <main class="container">
+    <h1 style="text-align: center;">815 – PEDIATRIC TRAUMA SCORE</h1>
+
+    <h2>EMT AEMT PARAMEDIC</h2>
+     
+
+   <div class="scroll-wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>+2 points</th>
+        <th>+1 point</th>
+        <th>-1 point</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Size</td><td>Greater than 20 kg</td><td>10–20 kg</td><td>Less than 10 kg</td></tr>
+      <tr><td>Airway</td><td>Normal</td><td>Oral/Nasal Airway</td><td>Unmaintainable/Intubated</td></tr>
+      <tr><td>Systolic BP</td><td>Greater than 90 mmHg</td><td>50–90 mmHg</td><td>Less than 50 mmHg</td></tr>
+      <tr><td>CNS</td><td>Awake</td><td>Obtunded/LOC</td><td>Coma</td></tr>
+      <tr><td>Open Wound</td><td>None</td><td>Minor</td><td>Major/Penetrating</td></tr>
+      <tr><td>Skeletal</td><td>None</td><td>Closed Fractures</td><td>Open/Multiple Fractures</td></tr>
+    </tbody>
+  </table>
+</div>
+      <p class="footer">
+        Total Point Values from Physical Presentation of Injury<br/>
+        Trauma Score ____________ Sum of Point
+      </p>
+    </div>
+  </main>
+
+  <nav id="sideMenu" class="side-menu hidden"></nav>
+  <script src="js/menu.js"></script>
+</body>
+</html>

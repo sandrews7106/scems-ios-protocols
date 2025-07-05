@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>809 – Trauma Score</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .content {
+      padding: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+      text-align: center;
+      font-weight: bold;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <button aria-label="Open menu" onclick="openNav()">☰</button>
+    <h1>SULLIVAN COUNTY EMS PROTOCOLS</h1>
+    <span></span>
+  </header>
+
+  <div class="logo-bar">
+    <img src="images/scems-logo.png" alt="Sullivan County EMS Logo" />
+  </div>
+
+  <main class="container">
+    <h1>809 – TRAUMA SCORE</h1>
+    <div class="content">
+      <table>
+        <thead><tr><th colspan="2">Respiratory Rate</th></tr></thead>
+        <tbody>
+          <tr><td>10–24/min</td><td>4</td></tr>
+          <tr><td>24–35/min</td><td>3</td></tr>
+          <tr><td>>36/min</td><td>2</td></tr>
+          <tr><td>1–9/min</td><td>1</td></tr>
+          <tr><td>None</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead><tr><th colspan="2">Respiratory Expansion</th></tr></thead>
+        <tbody>
+          <tr><td>Normal</td><td>1</td></tr>
+          <tr><td>Retractive</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead><tr><th colspan="2">Systolic Blood Pressure</th></tr></thead>
+        <tbody>
+          <tr><td>>90 mmHg</td><td>4</td></tr>
+          <tr><td>70–89 mmHg</td><td>3</td></tr>
+          <tr><td>50–69 mmHg</td><td>2</td></tr>
+          <tr><td>0–49 mmHg</td><td>1</td></tr>
+          <tr><td>No Pulse</td><td>0</td></tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead><tr><th colspan="2">Capillary Refill</th></tr></thead>
+        <tbody>
+          <tr><td>Normal</td><td>2</td></tr>
+          <tr><td>Delayed</td><td>1</td></tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead><tr><th>GCS Score</th><th>RTS Points</th></tr></thead>
+        <tbody>
+          <tr><td>14–15</td><td>5</td></tr>
+          <tr><td>11–13</td><td>4</td></tr>
+          <tr><td>8–12</td><td>3</td></tr>
+          <tr><td>5–7</td><td>2</td></tr>
+          <tr><td>3–4</td><td>1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <nav id="sideMenu" class="side-menu hidden"></nav>
+  <script src="js/menu.js"></script>
+</body>
+</html>

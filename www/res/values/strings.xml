@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">SULLIVAN COUNTY EMS PROTOCOLS</string>
+<string name="logo_description">Sullivan County EMS Logo</string>
+<string name="loading_text">Loading protocols...</string>
+</resources>

@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>ENCODE Hospital Directory</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="css/style.css" rel="stylesheet"/>
+<style>
+    .encode-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+    .encode-table th, .encode-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    .encode-table th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+  
+@media (max-width: 768px) {
+  .encode-table {
+    font-size: 0.8em;
+  }
+  .encode-table th:nth-child(2),
+  .encode-table td:nth-child(2) {
+    max-width: 160px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+}
+</style>
+</head>
+<header class="app-header">
+<button aria-label="Open menu" onclick="openNav()">☰</button>
+<h1>SULLIVAN COUNTY EMS PROTOCOLS</h1>
+<span></span>
+</header>
+<div class="logo-bar">
+<img alt="Sullivan County EMS Logo" src="images/scems-logo.png"/>
+</div>
+<main class="container">
+<h1 style="text-align:center;">Hospital ENCODE Directory</h1>
+<div class="scroll-wrapper">
+<table class="dataframe encode-table">
+<thead>
+<tr style="text-align: right;">
+<th>County</th>
+<th>Facility</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anderson</td>
+<td>Methodist Medical Center of Oak Ridge</td>
+<td>010</td>
+</tr>
+<tr>
+<td>Bedford</td>
+<td>Bedford County Medical Center</td>
+<td>020</td>
+</tr>
+<tr>
+<td>Benton</td>
+<td>Camden General Hospital</td>
+<td>025</td>
+</tr>
+<tr>
+<td>Bledsoe</td>
+<td>Erlanger Bledsoe</td>
+<td>030</td>
+</tr>
+<tr>
+<td>Blount</td>
+<td>Blount Memorial Hospital</td>
+<td>040</td>
+</tr>
+<tr>
+<td>Bradley</td>
+<td>Bradley Memorial Hospital</td>
+<td>050</td>
+</tr>
+<tr>
+<td>Bradley</td>
+<td>Cleveland Community Hospital</td>
+<td>051</td>
+</tr>
+<tr>
+<td>Campbell</td>
+<td>Jellico Community Hospital, Inc.</td>
+<td>060</td>
+</tr>
+<tr>
+<td>Campbell</td>
+<td>St. Mary's Med. Ctr. Of Campbell Co.</td>
+<td>061</td>
+</tr>
+<tr>
+<td>Cannon</td>
+<td>Stones River Hospital</td>
+<td>065</td>
+</tr>
+<tr>
+<td>Carroll</td>
+<td>Baptist Memorial Hospital–Huntingdon</td>
+<td>070</td>
+</tr>
+<tr>
+<td>Carroll</td>
+<td>McKenzie Regional Hospital</td>
+<td>071</td>
+</tr>
+<tr>
+<td>Carter</td>
+<td>Sycamore Shoals Hospital</td>
+<td>080</td>
+</tr>
+<tr>
+<td>Cheatham</td>
+<td>Centennial Medical Center at Ashland</td>
+<td>090</td>
+</tr>
+<tr>
+<td>Chester</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Claiborne</td>
+<td>Claiborne County Hospital</td>
+<td>095</td>
+</tr>
+<tr>
+<td>Clay</td>
+<td>Cumberland River Hospital</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Cocke</td>
+<td>Baptist Hospital of Cocke County</td>
+<td>105</td>
+</tr>
+<tr>
+<td>Coffee</td>
+<td>Harton Regional Medical Center</td>
+<td>111</td>
+</tr>
+<tr>
+<td>Coffee</td>
+<td>Medical Center of Manchester</td>
+<td>112</td>
+</tr>
+<tr>
+<td>Coffee</td>
+<td>United Regional Medical Center</td>
+<td>110</td>
+</tr>
+<tr>
+<td>Crockett</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Cumberland</td>
+<td>Cumberland Medical Center</td>
+<td>115</td>
+</tr>
+<tr>
+<td>Davidson</td>
+<td>Baptist Hospital</td>
+<td>120</td>
+</tr>
+<tr>
+<td>Davidson</td>
+<td>Centennial Medical Center</td>
+<td>121</td>
+</tr>
+<tr>
+<td>Davidson</td>
+<td>Metro Nashville General Hospital</td>
+<td>122</td>
+</tr>
+<tr>
+<td>Davidson</td>
+<td>St. Thomas Hospital</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Davidson</td>
+<td>Vanderbilt University Medical Center</td>
+<td>124</td>
+</tr>
+<tr>
+<td>Davidson</td>
+<td>Veterans Administration Medical Center</td>
+<td>125</td>
+</tr>
+<tr>
+<td>DeKalb</td>
+<td>DeKalb Community Hospital</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Dickson</td>
+<td>Goodlark Regional Medical Center</td>
+<td>135</td>
+</tr>
+<tr>
+<td>Dyer</td>
+<td>Dyersburg Regional Medical Center</td>
+<td>140</td>
+</tr>
+<tr>
+<td>Fayette</td>
+<td>Methodist Fayette Hospital</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Fentress</td>
+<td>Jamestown Regional Medical Center</td>
+<td>155</td>
+</tr>
+<tr>
+<td>Franklin</td>
+<td>Southern TN Medical Center</td>
+<td>160</td>
+</tr>
+<tr>
+<td>Gibson</td>
+<td>Gibson General Hospital</td>
+<td>170</td>
+</tr>
+<tr>
+<td>Gibson</td>
+<td>Humboldt General Hospital</td>
+<td>171</td>
+</tr>
+<tr>
+<td>Gibson</td>
+<td>Milan General Hospital</td>
+<td>172</td>
+</tr>
+<tr>
+<td>Giles</td>
+<td>Hillside Hospital</td>
+<td>175</td>
+</tr>
+<tr>
+<td>Grainger</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Greene</td>
+<td>Laughlin Memorial Hospital</td>
+<td>180</td>
+</tr>
+<tr>
+<td>Greene</td>
+<td>Takoma Adventist Hospital</td>
+<td>181</td>
+</tr>
+<tr>
+<td>Grundy</td>
+<td>Hillside Hospital - Tracy City</td>
+<td>185</td>
+</tr>
+<tr>
+<td>Hamblen</td>
+<td>Morristown-Hamblen Hospital</td>
+<td>190</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>Erlanger Medical Center</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>Parkridge Medical Center</td>
+<td>201</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>Memorial Hospital</td>
+<td>202</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>Erlanger North</td>
+<td>203</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>Parkridge Valley</td>
+<td>204</td>
+</tr>
+<tr>
+<td>Hamilton</td>
+<td>Erlanger East</td>
+<td>205</td>
+</tr>
+<tr>
+<td>Hancock</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Hardeman</td>
+<td>Bolivar General Hospital</td>
+<td>210</td>
+</tr>
+<tr>
+<td>Hardin</td>
+<td>Hardin Medical Center</td>
+<td>215</td>
+</tr>
+<tr>
+<td>Hawkins</td>
+<td>Wellmont Hawkins County Memorial</td>
+<td>220</td>
+</tr>
+<tr>
+<td>Hawkins</td>
+<td>Church Hill ER</td>
+<td>221</td>
+</tr>
+<tr>
+<td>Haywood</td>
+<td>Haywood Park Community Hospital</td>
+<td>225</td>
+</tr>
+<tr>
+<td>Henderson</td>
+<td>Lexington Hospital</td>
+<td>230</td>
+</tr>
+<tr>
+<td>Henry</td>
+<td>Henry County Medical Center</td>
+<td>235</td>
+</tr>
+<tr>
+<td>Hickman</td>
+<td>Three Rivers Hospital</td>
+<td>240</td>
+</tr>
+<tr>
+<td>Houston</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Humphreys</td>
+<td>Waverly Hospital</td>
+<td>250</td>
+</tr>
+<tr>
+<td>Jackson</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Jefferson</td>
+<td>Jefferson Memorial Hospital</td>
+<td>255</td>
+</tr>
+<tr>
+<td>Johnson</td>
+<td>Johnson County Community Hospital</td>
+<td>260</td>
+</tr>
+<tr>
+<td>Knox</td>
+<td>Fort Sanders Regional Medical Center</td>
+<td>270</td>
+</tr>
+<tr>
+<td>Knox</td>
+<td>UT Medical Center</td>
+<td>271</td>
+</tr>
+<tr>
+<td>Knox</td>
+<td>Baptist Hospital of East Tennessee</td>
+<td>272</td>
+</tr>
+<tr>
+<td>Knox</td>
+<td>St. Mary's Medical Center</td>
+<td>273</td>
+</tr>
+<tr>
+<td>Lake</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Lauderdale</td>
+<td>Lauderdale County Hospital</td>
+<td>275</td>
+</tr>
+<tr>
+<td>Lawrence</td>
+<td>Lawrenceburg Community Hospital</td>
+<td>280</td>
+</tr>
+<tr>
+<td>Lewis</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Lincoln</td>
+<td>Lincoln Medical Center</td>
+<td>285</td>
+</tr>
+<tr>
+<td>Loudon</td>
+<td>Fort Loudoun Medical Center</td>
+<td>290</td>
+</tr>
+<tr>
+<td>McMinn</td>
+<td>Athens Regional Medical Center</td>
+<td>295</td>
+</tr>
+<tr>
+<td>McNairy</td>
+<td>McNairy Regional Hospital</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Macon</td>
+<td>Macon County General Hospital</td>
+<td>305</td>
+</tr>
+<tr>
+<td>Madison</td>
+<td>Jackson-Madison County General</td>
+<td>310</td>
+</tr>
+<tr>
+<td>Marion</td>
+<td>Grandview Medical Center</td>
+<td>315</td>
+</tr>
+<tr>
+<td>Marshall</td>
+<td>Marshall Medical Center</td>
+<td>320</td>
+</tr>
+<tr>
+<td>Maury</td>
+<td>Maury Regional Hospital</td>
+<td>325</td>
+</tr>
+<tr>
+<td>Meigs</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Monroe</td>
+<td>Sweetwater Hospital Association</td>
+<td>330</td>
+</tr>
+<tr>
+<td>Montgomery</td>
+<td>Gateway Health System</td>
+<td>335</td>
+</tr>
+<tr>
+<td>Moore</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Morgan</td>
+<td>Lifecare Morgan County</td>
+<td>340</td>
+</tr>
+<tr>
+<td>Obion</td>
+<td>Baptist Memorial Hospital - Union City</td>
+<td>345</td>
+</tr>
+<tr>
+<td>Overton</td>
+<td>Livingston Regional Hospital</td>
+<td>350</td>
+</tr>
+<tr>
+<td>Perry</td>
+<td>Perry Community Hospital</td>
+<td>355</td>
+</tr>
+<tr>
+<td>Pickett</td>
+<td>Byrdstown Medical Center</td>
+<td>360</td>
+</tr>
+<tr>
+<td>Polk</td>
+<td>Copper Basin Medical Center</td>
+<td>365</td>
+</tr>
+<tr>
+<td>Putnam</td>
+<td>Cookeville Regional Medical Center</td>
+<td>370</td>
+</tr>
+<tr>
+<td>Rhea</td>
+<td>Rhea Medical Center</td>
+<td>375</td>
+</tr>
+<tr>
+<td>Roane</td>
+<td>Roane Medical Center</td>
+<td>380</td>
+</tr>
+<tr>
+<td>Robertson</td>
+<td>NorthCrest Medical Center</td>
+<td>385</td>
+</tr>
+<tr>
+<td>Rutherford</td>
+<td>Middle Tennessee Medical Center</td>
+<td>390</td>
+</tr>
+<tr>
+<td>Scott</td>
+<td>Scott County Hospital</td>
+<td>395</td>
+</tr>
+<tr>
+<td>Sequatchie</td>
+<td>No Hospital</td>
+<td></td>
+</tr>
+<tr>
+<td>Sevier</td>
+<td>LeConte Medical Center</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Baptist Memorial Hospital - Collierville</td>
+<td>693</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Baptist Memorial Hospital - Memphis</td>
+<td>675</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Delta Medical Center</td>
+<td>679</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Methodist Health - Germantown Hosp.</td>
+<td>680</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Methodist-LeBonheur Childrens Med.Ctr.</td>
+<td>682</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Methodist Healthcare - North Hospital</td>
+<td>686</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Methodist Healthcare - South Hospital</td>
+<td>684</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Methodist Health - University Hospital</td>
+<td>685</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Regional Medical Center at Memphis</td>
+<td>688</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Saint Francis Hospital - Memphis</td>
+<td>689</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Saint Francis Hospital - Bartlett</td>
+<td>690</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>St. Jude Children's Research Hospital</td>
+<td>691</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>Future Assignment</td>
+<td>692</td>
+</tr>
+<tr>
+<td>Shelby</td>
+<td>VA-TN Healthcare System - Memphis</td>
+<td>702</td>
+</tr>
+<tr>
+<td>Sullivan</td>
+<td>Indian Path Medical Center</td>
+<td>769</td>
+</tr>
+<tr>
+<td>Sullivan</td>
+<td>Bristol Regional Medical Center</td>
+<td>767</td>
+</tr>
+<tr>
+<td>Sullivan</td>
+<td>Holston Valley Medical Center</td>
+<td>770</td>
+</tr>
+<tr>
+<td>STATE</td>
+<td>STATE-WIDE ALL CALL</td>
+<td>999</td>
+</tr>
+</tbody>
+</table>
+</div></main>
+<nav class="side-menu hidden" id="sideMenu"></nav>
+<script src="js/menu.js"></script>
+</html>

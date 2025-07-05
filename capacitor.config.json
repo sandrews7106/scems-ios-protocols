@@ -1,0 +1,6 @@
+{
+  "appId": "com.scems.protocols",
+  "appName": "SCEMS Protocols",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

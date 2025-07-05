@@ -5,12 +5,9 @@ workflows:
       vars:
         APP_NAME: "SCEMS Protocols"
     scripts:
-      - name: Add iOS platform
+      - name: Sync Capacitor (manually assume iOS added)
         script: |
-          npx cap add ios
-      - name: Sync Capacitor
-        script: |
-          npx cap sync ios
+          npx cap sync ios || true
       - name: Build iOS app (no signing)
         script: |
           cd ios

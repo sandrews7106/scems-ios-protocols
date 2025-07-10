@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="css/style.css"/>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" id="MathJax-script" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
     .math-scroll {
       overflow-x: auto;
@@ -24,18 +23,20 @@
     }
   </style>
 </head>
-
 <body>
   <header class="app-header">
     <button aria-label="Open menu" onclick="openNav()">☰</button>
     <h1>MEDICATION & FLUID FORMULAS</h1>
     <span></span>
   </header>
+
   <div class="logo-bar">
     <img alt="Sullivan County EMS Logo" src="images/scems-logo.png"/>
   </div>
+
   <nav id="sideMenu" class="side-menu"></nav>
   <main class="container">
+
     <h2>Common Metric Conversions</h2>
     <ul>
       <li><strong>1 L</strong> = 1000 mL</li>
@@ -44,67 +45,94 @@
       <li><strong>1 kg</strong> = 2.2 lbs</li>
       <li><strong>1 mL</strong> = 1 cc</li>
     </ul>
+
     <p>Use the following formulas for calculating drug dosages, IV rates, and infusions.</p>
 
+        <div class="example">
+      <h2>1. Weight Conversion</h2>
+      <div class="math-scroll"><p>\[ \frac{\text{lbs}}{2.2} = \text{kg} \]</p></div>
+      <strong>Weight:</strong> 175 lbs<br>
+      <div class="math-scroll"><p>\[ \frac{175}{2.2} = 79.5 \approx 80\, \text{kg} \]</p></div>
+    </div>      
+          
     <div class="example">
-      <h2>1. Volume to Administer (mL)</h2>
-      <div class="math-scroll"><p class="math">\[ \frac{\text{DO} \times \text{wt.} \times \text{V}}{\text{DH}} = \text{mL} \]</p></div>
+      <h2>2. Basic Volume Calculation (non-weight-based)</h2>
+      <div class="math-scroll"><p>\[ \frac{\text{DO} \times \text{V}}{\text{DH}} = \text{mL} \]</p></div>
+      <strong>Order:</strong> 2 mg<br>
+      <strong>DH:</strong> 10 mg/mL<br>
+      <strong>Volume (V):</strong> 1 mL<br>
+      <div class="math-scroll"><p>\[ \frac{2 \times 1}{10} = 0.2\, \text{mL} \]</p></div>
+    </div>
+          
+    <div class="example">
+    <h2>3. Volume to Administer (mL)</h2>
+      <div class="math-scroll"><p>\[ \frac{\text{DO} \times \text{wt.} \times \text{V}}{\text{DH}} = \text{mL} \]</p></div>
       <strong>Order:</strong> 2 mg/kg IV<br>
       <strong>Weight:</strong> 80 kg<br>
       <strong>Drug Concentration (DH):</strong> 100 mg/mL<br>
       <strong>Volume (V):</strong> 1 mL<br>
-      <div class="math-scroll"><p class="math">\[ \frac{2 \times 80 \times 1}{100} = 1.6\, \text{mL} \]</p></div>
+      <div class="math-scroll"><p>\[ \frac{2 \times 80 \times 1}{100} = 1.6\, \text{mL} \]</p></div>
     </div>
 
     <div class="example">
-      <h2>2. IV Drip Rate (gtt/min)</h2>
-      <div class="math-scroll"><p class="math">\[ \frac{\text{Volume} \times \text{Drop Factor}}{\text{Time}} = \text{gtt/min} \]</p></div>
+      <h2>4. IV Drip Rate (gtt/min)</h2>
+      <div class="math-scroll"><p>\[ \frac{\text{Volume} \times \text{Drop Factor}}{\text{Time}} = \text{gtt/min} \]</p></div>
       <strong>Volume:</strong> 500 mL<br>
       <strong>Drop Factor:</strong> 15 gtt/mL<br>
       <strong>Time:</strong> 30 min<br>
-      <div class="math-scroll"><p class="math">\[ \frac{500 \times 15}{30} = 250\, \text{gtt/min} \]</p></div>
+      <div class="math-scroll"><p>\[ \frac{500 \times 15}{30} = 250\, \text{gtt/min} \]</p></div>
     </div>
 
     <div class="example">
-      <h2>3. Infusion Rate (mL/hr)</h2>
-      <div class="math-scroll"><p class="math">\[ \frac{\text{Dose} \times \text{wt.} \times 60 \times \text{V}}{\text{DH}} = \text{mL/hr} \]</p></div>
+      <h2>5. IV Pump Infusion (mL/hr)</h2>
+      <div class="math-scroll"><p>\[ \frac{\text{Dose} \times \text{wt.} \times min \times \text{V}}{\text{DH}} = \text{mL/hr} \]</p></div>
       <strong>Dose:</strong> 5 mcg/kg/min<br>
       <strong>Weight:</strong> 70 kg<br>
-      <strong>DH:</strong> 1600 mcg/mL<br>
-      <div class="math-scroll"><p class="math">\[ \frac{5 \times 70 \times 60 \times 1}{1600} = 13.1\, \text{mL/hr} \]</p></div>
+        <strong>Time:</strong> 60 min (1 hr)<br>
+        <strong>DH:</strong> 1600 mcg/mL<br>
+      <div class="math-scroll"><p>\[ \frac{5 \times 70 \times 60 \times 1}{1600} = 13.1\, \text{mL/hr} \]</p></div>
     </div>
 
     <div class="example">
-      <h2>4. Dose from Premixed Infusion (mcg/kg/min)</h2>
-      <div class="math-scroll"><p class="math">\[ \frac{\text{Rate} \times \text{DH}}{\text{wt.} \times 60 \times \text{V}} = \text{mcg/kg/min} \]</p></div>
-      <strong>Rate:</strong> 15 mL/hr<br>
-      <strong>DH:</strong> 1600 mcg/mL<br>
-      <strong>Weight:</strong> 80 kg<br>
-      <div class="math-scroll"><p class="math">\[ \frac{15 \times 1600}{80 \times 60} = 5\, \text{mcg/kg/min} \]</p></div>
-    </div>
-
-    <div class="example">
-      <h2>5. Pediatric Dose (mg or mcg)</h2>
-      <div class="math-scroll"><p class="math">\[ \text{DO} \times \text{wt.} = \text{Total Dose} \]</p></div>
-      <strong>Order:</strong> 0.1 mg/kg<br>
-      <strong>Weight:</strong> 15 kg<br>
-      <div class="math-scroll"><p class="math">\[ 0.1 \times 15 = 1.5\, \text{mg} \]</p></div>
-    </div>
-
-    <div class="example">
-      <h2>6. Weight Conversion</h2>
-      <div class="math-scroll"><p class="math">\[ \frac{\text{lbs}}{2.2} = \text{kg} \]</p></div>
-      <strong>Weight:</strong> 175 lbs<br>
-      <div class="math-scroll"><p class="math">\[ \frac{175}{2.2} = 79.5 \approx 80\, \text{kg} \]</p></div>
-    </div>
-
-    <div class="example">
-      <h2>7. Basic Volume Calculation (non-weight-based)</h2>
-      <div class="math-scroll"><p class="math">\[ \frac{\text{DO} \times \text{V}}{\text{DH}} = \text{mL} \]</p></div>
-      <strong>Order:</strong> 2 mg<br>
-      <strong>DH:</strong> 10 mg/mL<br>
+  
+        <h2>6. Weight-Based Medication Infusion Without Pump (gtt/min)</h2>
+     <div class="math-scroll"><p>\[\frac{\text{DO} \times \text{wt.} \times \text{mL} \times \text{gtt factor}}{\text{DH}} = \text{gtt/min}\]</p></div>
+        <strong>Drug Ordered (DO):</strong> 5 mcg/kg/min<br>
+        <strong>Weight:</strong> 70 kg<br>
+        <strong>Volume:</strong> 250 mL<br>
+        <strong>Drop Factor:</strong> 60 gtt/mL<br>
+        <strong>DH (Total Drug in Solution):</strong> 400,000 mcg<br>
+        <div class="math-scroll"><p>\[\frac{5 \times 70 \times 250 \times 60}{400000} = 13.1\, \text{gtt/min}\]</p></div>
+</div>
+    
+      <div class="example">
+      <h2>7. Non-weight-based Medication Infusion (gtt/min)</h2>
+      <div class="math-scroll"><p>\[ \frac{\text{DO} \times \text{V} \times \text{gtt factor}}{\text{DH}} = \text{gtt/min} \]</p></div>
+      <strong>Order:</strong> 10 mg<br>
+      <strong>DH:</strong> 20 mg/mL<br>
       <strong>Volume (V):</strong> 1 mL<br>
-      <div class="math-scroll"><p class="math">\[ \frac{2 \times 1}{10} = 0.2\, \text{mL} \]</p></div>
+      <strong>Drop Factor:</strong> 60 gtt/mL<br>
+      <div class="math-scroll"><p>\[ \frac{10 \times 1 \times 60}{20} = 30\, \text{gtt/min} \]</p></div>
+    </div>
+
+
+    <div class="example">
+      <h2>8. Parkland Formula (Burn Fluid Resuscitation)</h2>
+      <div class="math-scroll"><p>\[ 4 \times \text{kg} \times \%\text{TBSA} = \text{mL over 24 hrs} \]</p></div>
+      <p>Give half over the first 8 hours from time of injury.</p>
+      <strong>Weight:</strong> 70 kg<br>
+      <strong>Burn Surface Area:</strong> 40%<br>
+      <div class="math-scroll"><p>\[ 4 \times 70 \times 40 = 11200\, \text{mL in 24 hrs} \]</p></div>
+      <p>First 8 hrs: 5600 mL</p>
+    </div>
+
+    <div class="example">
+      <h2>9. Consensus Formula (Burns)</h2>
+      <div class="math-scroll"><p>\[ 2 \times \text{kg} \times \%\text{TBSA} = \text{mL over 24 hrs} \]</p></div>
+      <p>Used for adults with partial/full thickness burns.</p>
+      <strong>Weight:</strong> 70 kg<br>
+      <strong>TBSA:</strong> 40%<br>
+      <div class="math-scroll"><p>\[ 2 \times 70 \times 40 = 5600\, \text{mL in 24 hrs} \]</p></div>
     </div>
 
   </main>
